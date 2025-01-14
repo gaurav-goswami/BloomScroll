@@ -2,6 +2,7 @@
   "name": "bloomscroll",
   "version": "0.1.0",
   "private": true,
+  "author": "Gaurav Goswami",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
