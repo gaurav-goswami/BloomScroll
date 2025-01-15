@@ -1,8 +1,10 @@
-import HeroSection from "./_components/HeroSection";
+import HeroSection from "./_components/HeroSection/HeroSection";
 
 const Page = () => {
   return (
-    <HeroSection />
+    <>
+      <HeroSection />
+    </>
   )
 }
 
