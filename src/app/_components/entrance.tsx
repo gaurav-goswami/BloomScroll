@@ -17,7 +17,7 @@ const Entrance = () => {
     }, []);
 
     return (
-        <div className={`relative w-full h-screen overflow-hidden bg-${bgColor}`}>
+        <div className={`relative w-full h-full overflow-hidden bg-${bgColor}`}>
             <motion.div
                 className="w-7 h-7 bg-black rounded-full fixed top-1/2 left-0 transform -translate-y-1/2"
                 initial="hidden"
