@@ -2,6 +2,8 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import React, { useMemo, useRef } from "react";
+import NavigationDock from "../navigationDock";
+import { MouseIcon } from "lucide-react";
 
 const CIRCLES = 30;
 
@@ -35,10 +37,10 @@ const Hypnosis = () => {
         ["#fff", "#000"]
     );
 
-    const zeroCircleScale = useTransform(scrollYProgress, [0, 1], [1, 20]);
+    const zeroCircleScale = useTransform(scrollYProgress, [0, 1], [1, 35]);
 
     return (
-        <motion.div className="relative w-full h-[300vh] bg-white" ref={containerRef} style={{ backgroundColor }}>
+        <motion.div className="relative w-full h-[200vh] bg-white" ref={containerRef} style={{ backgroundColor }}>
             <motion.div className="flex flex-col gap-2 items-center text-black sticky top-0 h-[100vh] overflow-hidden">
                 <motion.section
                     className="w-full h-full absolute top-0 flex flex-col justify-center items-center"
@@ -73,6 +75,10 @@ const Hypnosis = () => {
                         />
                     ))}
                 </motion.section>
+                <NavigationDock />
+                <motion.span className="absolute bottom-10 flex items-center" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, repeat: Infinity, repeatType: "reverse" }}>
+                    <MouseIcon className="mr-2" size={24} />
+                </motion.span>
             </motion.div>
         </motion.div>
     );

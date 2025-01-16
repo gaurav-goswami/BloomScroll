@@ -57,7 +57,7 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
 		fontFamily: {
-			protest: ['Protest Strike', 'sans-serif']
+			protest: ['Bebas Neue', 'sans-serif']
 		}
   	}
   },
