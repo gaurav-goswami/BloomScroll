@@ -1,0 +1,65 @@
+.main {
+    position: relative;
+    .plane {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+        .phone {
+            position: absolute;
+        }
+
+        &:nth-of-type(1) {
+            filter: brightness(0.7);
+
+            .phone:nth-of-type(1) {
+                left: 90%;
+                top: 70%;
+            }
+
+            .phone:nth-of-type(2) {
+                left: 5%;
+                top: 55%;
+            }
+
+            .phone:nth-of-type(3) {
+                left: 55%;
+                top: 0%;
+            }
+        }
+
+        &:nth-of-type(2) {
+            filter: brightness(0.6);
+
+            .phone:nth-of-type(1) {
+                left: 15%;
+                top: 10%;
+            }
+
+            .phone:nth-of-type(2) {
+                left: 80%;
+                top: 5%;
+            }
+
+            .phone:nth-of-type(3) {
+                left: 60%;
+                top: 60%;
+            }
+        }
+
+        &:nth-of-type(3) {
+            filter: brightness(0.5);
+
+            .phone:nth-of-type(1) {
+                left: 55%;
+                top: 12%;
+                display: none;
+            }
+
+            .phone:nth-of-type(2) {
+                left: 40%;
+                top: 75%;
+            }
+        }
+    }
+}

@@ -28,7 +28,7 @@ const NavigationDock = () => {
     ];
 
     return (
-        <div className="flex items-center justify-center w-full bottom-10 absolute">
+        <div className="flex items-center justify-center w-full top-20 absolute">
             <FloatingDock
                 mobileClassName="translate-y-20"
                 items={links}
