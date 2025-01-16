@@ -1,10 +1,10 @@
 'use client';
 
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Entrance from "../entrance";
 import NavigationDock from "../navigationDock";
-import HeroText from "./hero-text";
-import { motion } from "framer-motion";
+import Hypnosis from "./hypnosis";
 
 const HeroSection = () => {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -21,9 +21,11 @@ const HeroSection = () => {
             {!isLoaded ? (
                 <Entrance />
             ) : (
-                <motion.div className="h-[400vh] bg-white" initial={{opacity: 0}} animate={{ opacity: 1 }}>
-                    <HeroText />
+                <motion.div className="h-[400vh] bg-black" initial={{opacity: 0}} animate={{ opacity: 1 }}>
+                    {/* <HeroText /> */}
+                    <Hypnosis />
                     <NavigationDock />
+                    <span className="text-white">I am here</span>
                 </motion.div>
             )
             }
