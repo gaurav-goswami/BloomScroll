@@ -1,9 +1,9 @@
 'use client';
 
 import { motion, useScroll, useTransform } from "framer-motion";
+import { MouseIcon } from "lucide-react";
 import React, { useMemo, useRef } from "react";
 import NavigationDock from "../navigationDock";
-import { MouseIcon } from "lucide-react";
 
 const CIRCLES = 30;
 
@@ -28,7 +28,6 @@ const Hypnosis = () => {
     }, []);
 
     const scaleCenter = useTransform(scrollYProgress, [0, 1], [1, 4]);
-    const zoom = useTransform(scrollYProgress, [0, 1], [1, 5]);
     const circleScale = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
     const borderProgress = useTransform(scrollYProgress, [0, 1], [0, 20]);
     const backgroundColor = useTransform(
@@ -46,11 +45,6 @@ const Hypnosis = () => {
                     className="w-full h-full absolute top-0 flex flex-col justify-center items-center"
                     style={{ scale: scaleCenter }}
                 >
-                    <motion.h1
-                        className="text-4xl font-bold mb-8 z-10"
-                        style={{ scale: zoom }}
-                    >
-                    </motion.h1>
                     {circleProps.map((props, index) => (
                         <motion.div
                             key={index}
