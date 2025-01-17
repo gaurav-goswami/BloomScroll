@@ -36,9 +36,8 @@ const MainSectionText = () => {
                 className="sticky top-0 h-full flex items-center justify-start overflow-hidden"
             >
                 <motion.span
-                    className="absolute text-center w-full"
+                    className="absolute text-center w-full text-7xl md:text-[150px] lg:text-[200px]"
                     style={{
-                        fontSize: "200px",
                         opacity: dontWorryOpacity,
                         y: dontWorryY,
                     }}
@@ -47,9 +46,8 @@ const MainSectionText = () => {
                 </motion.span>
 
                 <motion.span
-                    className="absolute text-center w-full"
+                    className="absolute text-center w-full text-7xl md:text-[150px] lg:text-[200px]"
                     style={{
-                        fontSize: "200px",
                         opacity: doomscrollingOpacity,
                         y: doomscrollingY,
                     }}
@@ -58,7 +56,7 @@ const MainSectionText = () => {
                 </motion.span>
 
                 <motion.span
-                    className="absolute text-center w-full"
+                    className="absolute text-center w-full text-7xl md:text-[150px] lg:text-[200px]"
                     style={{
                         fontSize: "200px",
                         opacity: deadOpacity,
